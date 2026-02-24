@@ -38,4 +38,18 @@ public class User {
 
     private LocalDateTime updatedAt;
 
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", user_name='" + user_name + '\'' +
+                ", email='" + email + '\'' +
+                ", password='" + password + '\'' +
+                ", phone='" + phone + '\'' +
+                ", role=" + role +
+                ", isActive=" + isActive +
+                ", createdAt=" + createdAt +
+                ", updatedAt=" + updatedAt +
+                '}';
+    }
 }
