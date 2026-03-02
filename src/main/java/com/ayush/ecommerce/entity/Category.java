@@ -5,6 +5,7 @@ import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -31,6 +32,6 @@ public class Category {
     private LocalDateTime createdAt;
 
     @OneToMany(mappedBy = "category")
-    private List<Product> products; // Inverse Side
+    private List<Product> products = new ArrayList<>(); // Inverse Side
 
 }

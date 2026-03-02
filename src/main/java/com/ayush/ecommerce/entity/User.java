@@ -45,7 +45,7 @@ public class User {
     @UpdateTimestamp
     private LocalDateTime updatedAt;
 
-    @OneToOne(mappedBy = "user")
+    @OneToOne(mappedBy = "user", orphanRemoval = true, fetch = FetchType.LAZY)
     @ToString.Exclude
     private Cart cart;
 }
