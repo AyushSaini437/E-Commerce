@@ -1,4 +1,4 @@
-package com.ayush.ecommerce.entity;
+package com.ayush.ecommerce.entity.enums;
 
 public enum UserRole {
     ADMIN,
