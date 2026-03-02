@@ -1,6 +1,6 @@
 package com.ayush.ecommerce.entity;
 
-public enum Role {
+public enum UserRole {
     ADMIN,
     USER,
     VENDOR
