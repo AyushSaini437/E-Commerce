@@ -28,7 +28,7 @@ public class User {
     private String email;
 
     @Column(nullable = false)
-    private String password;
+    private String password; // Sensitive Data
 
     private String phone;
 
@@ -40,10 +40,10 @@ public class User {
 
     @CreationTimestamp
     @Column(nullable = false, updatable = false)
-    private LocalDateTime createdAt;
+    private LocalDateTime createdAt; // Sensitive Data
 
     @UpdateTimestamp
-    private LocalDateTime updatedAt;
+    private LocalDateTime updatedAt; // Sensitive Data
 
     @OneToOne(mappedBy = "user", orphanRemoval = true, fetch = FetchType.LAZY)
     @ToString.Exclude
