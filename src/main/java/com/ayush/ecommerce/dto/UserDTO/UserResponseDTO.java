@@ -1,4 +1,4 @@
-package com.ayush.ecommerce.dto.userDTO;
+package com.ayush.ecommerce.dto.UserDTO;
 
 import com.ayush.ecommerce.entity.enums.UserRole;
 import lombok.AllArgsConstructor;
@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class UserResponseDTO {
     private Long id;
-    private String user_name;
+    private String userName;
     private String email;
     private UserRole role;
     private boolean isActive;
