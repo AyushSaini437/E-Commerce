@@ -37,7 +37,7 @@ public class Product {
     private Category category;
 
     @Column(nullable = false)  // Means the product should be visible to User or not
-    private boolean isActive;
+    private Boolean isActive;
 
     @CreationTimestamp
     @Column(updatable = false)
